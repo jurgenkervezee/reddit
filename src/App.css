@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+/*colors*/
+/*Rood #dd3038;*/
+/*Oranje #e7613a;*/
+/*Licht oranje #FDF4F2;*/
+/*Zwart #292929 (voor standaard tekst);*/
+/*Wit #FFFFFF;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
+
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reddit-logo{
+    width: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outer-container{
+    display: flex;
+    justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.inner-container{
+    display: flex;
+    flex-basis: 1200px;
+    flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tile-section{
+    display: block;
 }
