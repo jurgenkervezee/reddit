@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+/*colors*/
+/*Rood #dd3038;*/
+/*Oranje #e7613a;*/
+/*Licht oranje #FDF4F2;*/
+/*Zwart #292929 (voor standaard tekst);*/
+/*Wit #FFFFFF;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer-container{
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: #dd3038;
+}
+.inner-container{
+    display: flex;
+    flex-basis: 1200px;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-container{
+    margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reddit-logo{
+    width: 200px;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container{
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,h2,h3,h4,a {
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.title-header{
+    display: flex;
+    justify-content: center;
+}
+.sub-title-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tile-section{
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reddit-tile{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 250px ;
+    border: solid black;
+}
+.tile-tile-link{
+    text-align: left;
+    word-wrap: break-word;
 }
