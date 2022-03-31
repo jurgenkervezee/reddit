@@ -7,6 +7,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
 
+.outer-container{
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: #dd3038;
+}
+.inner-container{
+    display: flex;
+    flex-basis: 1200px;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.nav-container{
+    margin-bottom: 50px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+
+}
+.li{
+    /*display: flex;*/
+}
 h1,h2,h3,h4{
     font-family: 'Poppins', sans-serif;
 }
@@ -22,15 +51,7 @@ p{
 .reddit-logo{
     width: 250px;
 }
-.outer-container{
-    display: flex;
-    justify-content: center;
-}
-.inner-container{
-    display: flex;
-    flex-basis: 1200px;
-    flex-direction: column;
-}
+
 .tile-section{
     display: block;
 }

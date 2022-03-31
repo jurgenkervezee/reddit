@@ -27,16 +27,20 @@ function Homepage() {
     return (
         <>
             <header>
+                <div className="nav-container">
                 <ul className="nav-links">
                     <li>HOTTEST POSTS</li>
                     <li>REDDIT</li>
                     <li>MEMES</li>
                 </ul>
+                </div>
+                <div className="Logo-container">
                 <img
                     src={logo}
                     alt="reddit-logo"
                     // className="reddit-logo"
                 />
+                </div>
             </header>
             <div className="outer-container">
             <div className="inner-container">
@@ -61,7 +65,7 @@ function Homepage() {
 
                             )
                         })}
-                        }
+
                     </>
                 }
 
