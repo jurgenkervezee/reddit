@@ -8,7 +8,10 @@ function RedditArticle({externallink, link, title, category, comments, ups}){
         <>
             <div className="reddit-tile">
 
-                <a href={`https://www.reddit.com${externallink}`}>{title}</a><br/>
+                <a className="tile-title-link"
+                   href={`https://www.reddit.com${externallink}`}
+                >
+                    {title}</a><br/>
 
 
                 <Link to={`/subreddit/${link}`}>{category}</Link>

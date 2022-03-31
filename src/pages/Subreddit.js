@@ -31,7 +31,7 @@ const Subreddit = () => {
     return (
         <>  {subreddit &&
             <>
-                <div>
+                <div className="tile">
                     <h1>{subreddit.display_name_prefixed}</h1>
                     <p>Subreddit specification</p>
                 </div>

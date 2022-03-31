@@ -6,7 +6,10 @@
 /*Wit #FFFFFF;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
-
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 .outer-container{
     display: flex;
     justify-content: center;
@@ -18,7 +21,6 @@ header{
     display: flex;
     flex-basis: 1200px;
     flex-direction: column;
-    margin: 50px;
 }
 
 .nav-container{
@@ -30,28 +32,50 @@ header{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-
-
 }
-.li{
-    /*display: flex;*/
+
+.reddit-logo{
+    width: 200px;
+    margin-bottom: 20px;
 }
-h1,h2,h3,h4{
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+h1,h2,h3,h4,a {
     font-family: 'Poppins', sans-serif;
 }
 p{
     font-family: 'Roboto Condensed', sans-serif;
 }
-
-* {
-    margin: 0;
-    box-sizing: border-box;
+.title-header{
+    display: flex;
+    justify-content: center;
 }
-
-.reddit-logo{
-    width: 250px;
+.sub-title-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .tile-section{
-    display: block;
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reddit-tile{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 250px ;
+    border: solid black;
+}
+.tile-tile-link{
+    text-align: left;
+    word-wrap: break-word;
 }

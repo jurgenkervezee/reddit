@@ -34,8 +34,8 @@ function Homepage() {
                     <li>MEMES</li>
                 </ul>
                 </div>
-                <div className="Logo-container">
-                <img
+                <div className="logo-container">
+                <img className="reddit-logo"
                     src={logo}
                     alt="reddit-logo"
                     // className="reddit-logo"
@@ -44,8 +44,13 @@ function Homepage() {
             </header>
             <div className="outer-container">
             <div className="inner-container">
-                <h2>Hottest posts</h2>
-                <p>on reddit right now</p>
+
+                <div className="title-header">
+                    <h2>Hottest posts</h2>
+                </div>
+                <div className="sub-title-header">
+                    <p>on reddit right now</p>
+                </div>
 
                 <div className="tile-section">
                 {redditArticles &&
